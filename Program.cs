@@ -28,6 +28,22 @@
                         Console.WriteLine($"Depósito de R$ {valor:F2} realizado com sucesso!");
                     }
                     else
+                    {
+                        Console.WriteLine("Valor de depósito inválido!");
+                    }
+                    break;
+
+                case 2: // Saque
+                    Console.Write("Valor do saque: ");
+                    valor = Convert.ToDouble(Console.ReadLine());
+                    if (valor <= saldo)
+                    {
+                        saldo -= valor;
+                        Console.WriteLine($"Saque de R$ {valor:F2} realizado com sucesso!");
+                    }
+                    else
+                    {
+
 
 
 
