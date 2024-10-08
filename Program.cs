@@ -17,5 +17,17 @@
             Console.WriteLine("4. Sair");
             Console.Write("Escolha uma opção: ");
             opcao = Convert.ToInt32(Console.ReadLine());
+            switch (opcao)
+            {
+                case 1: // Depósito
+                    Console.Write("Valor do depósito: ");
+                    valor = Convert.ToDouble(Console.ReadLine());
+                    if (valor > 0)
+                    {
+                        saldo += valor;
+                        Console.WriteLine($"Depósito de R$ {valor:F2} realizado com sucesso!");
+                    }
+                    else
+
 
 
