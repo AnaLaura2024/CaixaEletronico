@@ -43,6 +43,26 @@
                     }
                     else
                     {
+                        Console.WriteLine("Saldo insuficiente!");
+                    }
+                    break;
+
+                case 3: // Extrato
+                    Console.WriteLine($"Saldo atual: R$ {saldo:F2}");
+                    break;
+
+                case 4: // Sair
+                    Console.WriteLine("Saindo do Caixa Eletrônico. Até logo!");
+                    return; // Sai do programa
+
+                default: // Opção inválida
+                    Console.WriteLine("Opção inválida! Tente novamente.");
+                    break;
+            }
+        }
+    }
+}
+
 
 
 
